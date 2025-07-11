@@ -1,0 +1,1 @@
+// Page d'accueil (liste des logements)

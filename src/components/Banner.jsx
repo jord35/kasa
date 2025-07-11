@@ -1,0 +1,1 @@
+// Affiche une image (et éventuellement un slogan) via children
