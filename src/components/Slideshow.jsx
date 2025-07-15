@@ -1,1 +1,0 @@
-// Carrousel d'images avec flèches et animation
