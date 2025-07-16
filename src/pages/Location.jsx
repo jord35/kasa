@@ -14,10 +14,30 @@ function LocationPage() {
         return <Navigate to="/404" />;
     }
 
+    const {
+        title,
+        location,
+        host: { name: hostName, picture: hostPicture },
+        tags,
+        rating,
+        description,
+        equipments,
+        pictures,
+    } = logement;
+
     return (
         <>
-            <Header picture={logement.pictures} txt="" />
-            <LogementDetails data={logement} />
+            <Header picture={pictures} txt="" />
+            <LogementDetails
+                title={title}
+                location={location}
+                hostName={hostName}
+                hostPicture={hostPicture}
+                tags={tags}
+                rating={rating}
+                description={description}
+                equipments={equipments}
+            />
             <Footer />
         </>
     );
