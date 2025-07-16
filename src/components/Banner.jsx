@@ -1,7 +1,7 @@
 // Affiche une image (et éventuellement un slogan) via children
 
 import { useState } from "react";
-import './Banner.scss';
+// import './Banner.scss';
 
 function Banner({ img, txt }) {
     const [index, setIndex] = useState(0);

@@ -1,6 +1,6 @@
-import Nav from "kasa/src/components/Nav.jsx";
-import Banner from "kasa/src/components/Banner.jsx";
-import "./Header.scss";
+import Nav from "./Nav";
+import Banner from "./Banner";
+// import "./Header.scss";
 
 function Header({ picture, txt }) {
     return (
