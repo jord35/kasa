@@ -1,0 +1,31 @@
+.collapse-wrapper {
+    width: 100%;
+}
+
+.collapse {
+    background-color: #FF6060;
+    border-radius: 5px;
+    width: 100%;
+    padding: 0px 20px 0px 15px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.collapse__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #ffffff;
+    font-size: 24px;
+    height: 52px;
+}
+
+.collapse__content {
+    width: 100%;
+    background-color: #f6f6f6;
+    padding: 25px 20px 20px 20px;
+    border-radius: 5px;
+
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}

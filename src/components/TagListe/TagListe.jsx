@@ -1,6 +1,6 @@
 //  dans la section info des page "Location"{
 // Affiche les tags du logement (ex: Cozy, Neuf…)}
-
+import "./tag-liste.scss"
 
 function TagListe({ tags }) {
     return (

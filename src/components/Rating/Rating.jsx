@@ -1,5 +1,6 @@
 //  dans la section info des page "Location"{
 // Affiche la note du logement avec étoiles (1 à 5)}
+import "./rating.scss"
 function Rating({ rating }) {
     const totalStars = 5;
     const stars = Array.from({ length: totalStars }, (_, index) => index + 1);

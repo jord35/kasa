@@ -1,7 +1,7 @@
 // Composant UI représentant une carte visuelle avec une image et un titre.
 // Sert principalement de lien vers une page dynamique (Location) .
 import { Link } from 'react-router-dom';
-// import './Card.scss';
+import './card.scss';
 
 function Card({ id, img, title }) {
     return (

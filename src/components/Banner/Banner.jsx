@@ -1,9 +1,9 @@
 // Affiche une image (et éventuellement un slogan) via children
 
 import { useState } from "react";
-// import './Banner.scss';
+import './banner.scss';
 
-function Banner({ img, txt }) {
+function Banner({ img, title }) {
     const [index, setIndex] = useState(0);
 
 
@@ -18,7 +18,7 @@ function Banner({ img, txt }) {
                     alt="banner"
                     className="banner__picture"
                 />
-                <h1 className="banner__title">{txt}</h1>
+                <h1 className="banner__title">{title}</h1>
             </div>
         );
     }
@@ -39,7 +39,7 @@ function Banner({ img, txt }) {
                 alt={`slide ${index}`}
                 className="banner__picture"
             />
-            <h1 className="banner__title">{txt}</h1>
+            <h1 className="banner__title">{title}</h1>
             <button onClick={handlePrev} className="banner__arrow banner__arrow--left">←</button>
             <button onClick={handleNext} className="banner__arrow banner__arrow--right">→</button>
         </div>

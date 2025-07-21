@@ -1,12 +1,12 @@
-import Header from "../components/Header";
-import Footer from "../components/footer";
-import Collapse from "../components/Collapse";
-import AproposImage from "../assets/A_Propos.png";
+import Header from "../components/Header/Header";
+import Footer from "../components/Footer/Footer";
+import Collapse from "../components/Collapse/Collapse";
+import AproposImage from "../assets/images/A_Propos.png";
 
 function AboutPage() {
     return (
         <>
-            <Header picture={[AproposImage]} txt="" />
+            <Header img={[AproposImage]} title="" />
 
             <main className="about">
                 <Collapse title="Fiabilité">

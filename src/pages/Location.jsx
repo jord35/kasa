@@ -2,9 +2,9 @@
 import { useParams, Navigate } from "react-router-dom";
 import data from "../data/data.json";
 
-import Header from "../components/Header";
-import Footer from "../components/footer";
-import LogementDetails from "../components/LogementDetails";
+import Header from "../components/Header/Header";
+import Footer from "../components/Footer/Footer";
+import LogementDetails from "../components/LogementDetails/LogementDetails";
 
 function LocationPage() {
     const { id } = useParams();
@@ -27,7 +27,7 @@ function LocationPage() {
 
     return (
         <>
-            <Header picture={pictures} txt="" />
+            <Header img={pictures} title="" />
             <LogementDetails
                 title={title}
                 location={location}

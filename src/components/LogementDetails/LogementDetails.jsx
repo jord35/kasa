@@ -1,7 +1,11 @@
-import LogementInfo from "./LogementInfo";
-import Rating from "./Rating";
-import TagListe from "./TagListe";
-import Collapse from "./Collapse";
+import LogementInfo from "../LogementInfo/LogementInfo";
+import Rating from "../Rating/Rating";
+import TagListe from "../TagListe/TagListe";
+import Collapse from "../Collapse/Collapse";
+import "./logement-details.scss";
+
+
+
 
 function LogementDetails({ title, location, hostPicture, hostName, tags, rating, description, equipments }) {
     return (

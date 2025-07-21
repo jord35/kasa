@@ -1,5 +1,6 @@
 //  dans la section info des page "Location"{
 // Titre, emplacement, hôte (nom + photo)}
+import "./logement-info.scss"
 
 function LogementInfo({ title, location, hostPicture, hostName }) {
     return (

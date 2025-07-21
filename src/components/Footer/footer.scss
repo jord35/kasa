@@ -1,0 +1,20 @@
+.footer__txt {
+    color: white;
+    margin-top: 26px;
+    margin-bottom: 0px;
+    font-size: 24px;
+}
+
+.footer {
+    background: black;
+    display: flex;
+    height: 209px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.footer__logo {
+    width: 122px;
+    height: 39.44px;
+}
