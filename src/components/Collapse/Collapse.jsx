@@ -1,8 +1,5 @@
 // // Menu déroulant (titre + contenu caché)
 
-
-
-
 import { useState } from "react";
 import "./collapse.scss";
 
@@ -14,7 +11,9 @@ function Collapse({ title, children }) {
             <div className="collapse" onClick={() => setIsOpen(!isOpen)}>
                 <div className="collapse__header">
                     <h3>{title}</h3>
-                    <span>{isOpen ? "▲" : "▼"}</span>
+                    <span className={`collapse__arrow ${isOpen ? "open" : ""}`}>
+                        ⟨
+                    </span>
                 </div>
             </div>
 

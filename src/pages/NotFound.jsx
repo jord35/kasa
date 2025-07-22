@@ -6,7 +6,7 @@ import Notfound from "../components/NotFound/NotFound";
 function NotFoundPage() {
     return (
         <>
-            <Header picture={[]} title="" />
+            <Header picture={[]} title="" isLocation={false} />
             <Notfound />
             <Footer />
         </>

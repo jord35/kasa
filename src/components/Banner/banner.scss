@@ -1,10 +1,16 @@
+@import '../../assets/scss/variables';
+
 .banner {
     display: inline-block;
     position: relative;
-    height: 223px;
+    height: 13.9375rem; // 223px
     width: 100%;
-    border-radius: 25px;
+    border-radius: 1.5625rem; // 25px
     overflow: hidden;
+}
+
+.banner--location {
+    height: 25.9375rem; // 415px
 }
 
 .banner__picture {
@@ -21,33 +27,33 @@
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1;
-    color: white;
-    font-size: 48px;
+    color: $white;
+    font-size: 3rem; // 48px
     text-align: center;
-    margin: 0px;
+    margin: 0;
 }
 
 .banner__arrow {
     position: absolute;
     top: 50%;
     transform: translate(-50%, -50%);
-    z-index: 1;
-    color: white;
-    font-size: 48px;
+    color: $white;
+    font-size: 3rem; // 48px
     text-align: center;
-    margin: 0px;
+    margin: 0;
+    background-color: transparent;
+    cursor: pointer;
 }
 
 .banner__arrow--left {
-    left: 47px;
-    padding: 0px;
-    margin: 0px;
-    border: 0px;
+    left: 1.9375rem; // 31px
+    padding: 0;
+    margin: 0;
+    border: 0;
 }
 
-
 .banner__arrow--right {
-    right: 1px;
-    padding: 0px;
-    border: 0px;
+    right: 1.4375rem; // 23px
+    padding: 0;
+    border: 0;
 }

@@ -1,0 +1,27 @@
+@import '../../assets/scss/variables';
+
+.notfound {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.notfound__title {
+    font-size: 16.438rem; // 263px
+    color: $red;
+    margin: 6rem 0; // 96px 0px
+    margin-bottom: 8.688rem; // 139px
+}
+
+.notfound__txt {
+    margin: 0 0 8.688rem 0; // 0 0 139px 0
+    font-size: 2.25rem; // 36px
+    color: $red;
+}
+
+.notfound__link {
+    font-size: 1.125rem; // 18px
+    margin-bottom: 8.688rem; // 139px
+    color: $dark;
+}

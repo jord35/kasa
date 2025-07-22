@@ -1,9 +1,11 @@
+@import '../../assets/scss/variables';
+
 .gallery {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 50px;
-    padding: 56px 60px 43px;
-    border-radius: 25px;
-    background-color: #F6F6F6;
-    margin-bottom: 50px;
+    gap: 3.125rem; // 50px
+    padding: 3.5rem 3.75rem 2.6875rem; // 56px 60px 43px
+    border-radius: 1.5625rem; // 25px
+    background-color: $grey-white;
+    margin-bottom: 3.125rem; // 50px
 }

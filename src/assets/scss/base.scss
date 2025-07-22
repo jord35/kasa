@@ -1,14 +1,15 @@
 body {
-    max-width: 1440px;
-    margin: 45px 100px 0px 100px;
+    max-width: 90rem;
+    margin: 2.8125rem auto 0 auto;
+    font-size: 16px;
 }
 
 .about {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 1240px;
-    padding: 0px 108.5px;
-    gap: 30px;
-    margin-bottom: 38px;
+    max-width: 77.5rem;
+    padding: 0 6.78rem;
+    gap: 1.875rem;
+    margin-bottom: 2.375rem;
 }

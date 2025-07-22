@@ -1,0 +1,23 @@
+@import '../../assets/scss/variables';
+
+.tag__item {
+    background-color: $red;
+    color: $white;
+    padding: 0.188rem 2.5rem 0.125rem; // 3px 40px 2px
+    border-radius: 0.625rem; // 10px
+    font-size: 0.875rem; // 14px
+    font-weight: bold;
+    height: 1.563rem; // 25px
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tag__list {
+    display: flex;
+    gap: 0.625rem; // 10px
+    justify-content: flex-start;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}

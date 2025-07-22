@@ -8,7 +8,7 @@ import HomeImage from "../assets/images/Accueil.png"
 function HomePage() {
     return (
         <>
-            <Header img={[HomeImage]} title="Chez vous, partout et ailleurs" />
+            <Header img={[HomeImage]} title="Chez vous, partout et ailleurs" isLocation={false} whereabouts={"Home"} />
             <Gallery data={data} />
             <Footer />
         </>

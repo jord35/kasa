@@ -27,7 +27,7 @@ function LocationPage() {
 
     return (
         <>
-            <Header img={pictures} title="" />
+            <Header img={pictures} title="" isLocation={true} />
             <LogementDetails
                 title={title}
                 location={location}

@@ -1,0 +1,44 @@
+@import '../../assets/scss/variables';
+
+.LogementInfo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.LogementInfo__title {
+    font-size: 2.25rem; // 36px
+    color: $red;
+    margin: 0;
+}
+
+.LogementInfo__location {
+    font-size: 1.125rem; // 18px
+    margin: 0.625rem 0 0 0; // 10px
+    font-weight: bold;
+}
+
+.LogementInfo__hostName {
+    margin: 0;
+    font-size: 1.125rem; // 18px
+    color: $red;
+}
+
+.LogementInfo__host {
+    display: flex;
+    font-size: 1.125rem; // 18px
+    gap: 0.625rem; // 10px
+    align-items: center;
+}
+
+.LogementInfo__hostPicture {
+    border-radius: 50%;
+    width: 4rem; // 64px
+    height: 4rem; // 64px
+}
+
+.LogementInfo__feature {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1.25rem; // 20px
+}

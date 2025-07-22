@@ -6,7 +6,7 @@ import AproposImage from "../assets/images/A_Propos.png";
 function AboutPage() {
     return (
         <>
-            <Header img={[AproposImage]} title="" />
+            <Header img={[AproposImage]} title="" isLocation={false} whereabouts={"About"} />
 
             <main className="about">
                 <Collapse title="Fiabilité">

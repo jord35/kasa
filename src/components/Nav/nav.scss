@@ -1,25 +1,30 @@
+@import '../../assets/scss/variables';
+
 .nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-direction: row;
-    margin-bottom: 50px;
+    margin-bottom: 3.125rem; // 50px
 }
 
-.nav-logo {
-    width: 210.32px;
+.nav__logo {
+    width: 13.145rem; // 210.32px
     height: 100%;
 }
 
-.nav-links {
+.nav__links {
     display: flex;
     justify-content: space-between;
-    gap: 57px;
-
+    gap: 3.563rem; // 57px
 }
 
-.nav-link {
-    color: black;
-    font-size: 24px;
+.nav__link {
+    color: $dark;
+    font-size: 1.5rem; // 24px
     text-decoration: none;
+
+    &--whereabouts {
+        text-decoration: underline;
+    }
 }

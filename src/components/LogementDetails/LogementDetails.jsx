@@ -1,6 +1,4 @@
 import LogementInfo from "../LogementInfo/LogementInfo";
-import Rating from "../Rating/Rating";
-import TagListe from "../TagListe/TagListe";
 import Collapse from "../Collapse/Collapse";
 import "./logement-details.scss";
 
@@ -15,22 +13,23 @@ function LogementDetails({ title, location, hostPicture, hostName, tags, rating,
                 location={location}
                 hostPicture={hostPicture}
                 hostName={hostName}
+                tags={tags}
+                rating={rating}
             />
 
-            <TagListe tags={tags} />
-            <Rating rating={rating} />
+            <div className="LogementDetails__collapses">
+                <Collapse title="Description">
+                    {description}
+                </Collapse>
 
-            <Collapse title="Description">
-                {description}
-            </Collapse>
-
-            <Collapse title="Équipements">
-                <ul>
-                    {equipments.map((item, index) => (
-                        <li key={index}>{item}</li>
-                    ))}
-                </ul>
-            </Collapse>
+                <Collapse title="Équipements">
+                    <ul>
+                        {equipments.map((item, index) => (
+                            <li key={index}>{item}</li>
+                        ))}
+                    </ul>
+                </Collapse>
+            </div>
         </section>
     );
 }

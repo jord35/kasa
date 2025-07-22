@@ -1,0 +1,10 @@
+@import '../../assets/scss/variables';
+
+.rating__star {
+    color: $light-white;
+    font-size: 2.25rem;
+}
+
+.rating__star--full {
+    color: $red;
+}
