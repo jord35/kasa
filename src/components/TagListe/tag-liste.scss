@@ -5,12 +5,20 @@
     color: $white;
     padding: 0.188rem 2.5rem 0.125rem; // 3px 40px 2px
     border-radius: 0.625rem; // 10px
-    font-size: 0.875rem; // 14px
+
+    font-size: $location_tag_size;
+
     font-weight: bold;
     height: 1.563rem; // 25px
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @media (max-width: 375px) {
+        font-size: $location_tag_size_mobile_app;
+        width: 84px;
+        padding: 0;
+    }
 }
 
 .tag__list {

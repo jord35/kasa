@@ -2,7 +2,11 @@
 
 .rating__star {
     color: $light-white;
-    font-size: 2.25rem;
+    font-size: $text_size;
+
+    @media (max-width: 375px) {
+        font-size: $star_mobile_app;
+    }
 }
 
 .rating__star--full {

@@ -8,20 +8,38 @@
 }
 
 .notfound__title {
-    font-size: 16.438rem; // 263px
+    font-size: $not_found_title_size;
     color: $red;
-    margin: 6rem 0; // 96px 0px
-    margin-bottom: 8.688rem; // 139px
+    margin: 6rem 0 8.688rem; // 96px 0px
+
+
+    @media (max-width: 375px) {
+        font-size: $not_found_title_size_mobile_app;
+        margin: 113px;
+
+    }
 }
 
 .notfound__txt {
     margin: 0 0 8.688rem 0; // 0 0 139px 0
-    font-size: 2.25rem; // 36px
+    font-size: $subtitle_size;
     color: $red;
+
+    @media (max-width: 375px) {
+        font-size: $subtitle_size_mobile_app;
+        margin-bottom: 113px;
+
+    }
 }
 
 .notfound__link {
-    font-size: 1.125rem; // 18px
+    font-size: $subtext_size; // 18px
     margin-bottom: 8.688rem; // 139px
     color: $dark;
+
+    @media (max-width: 375px) {
+        font-size: $not_found_subtext_size_mobile_app;
+        margin-bottom: 113px;
+
+    }
 }

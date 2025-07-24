@@ -3,42 +3,75 @@
 .LogementInfo {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 1.5rem;
+
+    @media (max-width: 375px) {
+        flex-direction: column;
+    }
 }
 
 .LogementInfo__title {
-    font-size: 2.25rem; // 36px
+    font-size: $subtitle_size ; // 36px
     color: $red;
     margin: 0;
+    font-weight: normal;
+
+    @media (max-width: 375px) {
+        font-size: $subtitle_size_mobile_app;
+        margin-top: 15px;
+    }
 }
 
 .LogementInfo__location {
-    font-size: 1.125rem; // 18px
-    margin: 0.625rem 0 0 0; // 10px
-    font-weight: bold;
+    font-size: $subtext_size;
+    margin: 0 0 20px 0;
+    font-weight: 200;
+
+    @media (max-width: 375px) {
+        font-size: $location_subtext_mobile_app;
+        margin: 5px 0 10px;
+    }
 }
 
-.LogementInfo__hostName {
-    margin: 0;
-    font-size: 1.125rem; // 18px
-    color: $red;
+
+
+
+.LogementInfo__hostAndRating {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (max-width: 375px) {
+        flex-direction: row-reverse;
+        margin-top: 16px;
+    }
+
 }
 
 .LogementInfo__host {
     display: flex;
-    font-size: 1.125rem; // 18px
     gap: 0.625rem; // 10px
     align-items: center;
+}
+
+.LogementInfo__hostName {
+    margin: 0;
+    font-size: $subtext_size; // 18px
+    color: $red;
+
+    @media (max-width: 375px) {
+        font-size: $text_size_mobile_app;
+    }
 }
 
 .LogementInfo__hostPicture {
     border-radius: 50%;
     width: 4rem; // 64px
     height: 4rem; // 64px
-}
 
-.LogementInfo__feature {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 1.25rem; // 20px
+    @media (max-width: 375px) {
+        width: 2rem;
+        height: 2rem;
+    }
 }

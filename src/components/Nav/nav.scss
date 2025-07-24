@@ -6,25 +6,42 @@
     justify-content: space-between;
     flex-direction: row;
     margin-bottom: 3.125rem; // 50px
+    width: 100%;
+
+    @media (max-width: 375px) {
+        margin-bottom: 27px;
+    }
 }
 
 .nav__logo {
     width: 13.145rem; // 210.32px
     height: 100%;
+
+    @media (max-width: 375px) {
+        width: 145px;
+    }
 }
 
 .nav__links {
     display: flex;
     justify-content: space-between;
     gap: 3.563rem; // 57px
+
+    @media (max-width: 375px) {
+        gap: 26px;
+    }
 }
 
 .nav__link {
     color: $dark;
-    font-size: 1.5rem; // 24px
+    font-size: $text_size; // 24px
     text-decoration: none;
 
     &--whereabouts {
         text-decoration: underline;
+    }
+
+    @media (max-width: 375px) {
+        font-size: $text_size_mobile_app;
     }
 }

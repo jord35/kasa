@@ -1,5 +1,26 @@
+@import '../../assets/scss/variables';
+
 .LogementDetails__collapses {
     display: flex;
-    gap: 4.75rem; // 76px
-    margin: 1.5rem 0 3.125rem; // 24px 0px 50px
+    gap: 4.75rem;
+
+    @media (max-width: 375px) {
+
+
+
+        flex-direction: column;
+        gap: 20px;
+    }
+
+}
+
+.LogementDetails__collapses .collapse-wrapper {
+    max-width: 582px;
+
+    @media (max-width: 375px) {
+
+
+
+        max-width: 100%;
+    }
 }

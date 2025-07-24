@@ -3,14 +3,24 @@
 .banner {
     display: inline-block;
     position: relative;
-    height: 13.9375rem; // 223px
     width: 100%;
-    border-radius: 1.5625rem; // 25px
+    height: 223px;
+    border-radius: 1.5625rem;
     overflow: hidden;
+
+    @media (max-width: 375px) {
+        height: 111px;
+
+    }
 }
 
 .banner--location {
-    height: 25.9375rem; // 415px
+    height: 25.9375rem;
+
+
+    @media (max-width: 375px) {
+        height: 255px;
+    }
 }
 
 .banner__picture {
@@ -18,7 +28,12 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+
+}
+
+.banner__picture--not__location {
     filter: brightness(60%);
+
 }
 
 .banner__title {
@@ -28,9 +43,15 @@
     transform: translate(-50%, -50%);
     z-index: 1;
     color: $white;
-    font-size: 3rem; // 48px
+    font-size: $title_size; // 48px
     text-align: center;
     margin: 0;
+
+    @media (max-width: 375px) {
+        font-size: $title_size_mobile_app;
+        text-align: start;
+        left: 38%;
+    }
 }
 
 .banner__arrow {
@@ -38,11 +59,16 @@
     top: 50%;
     transform: translate(-50%, -50%);
     color: $white;
-    font-size: 3rem; // 48px
+    font-size: $title_size; // 48px
     text-align: center;
     margin: 0;
     background-color: transparent;
     cursor: pointer;
+
+    @media (max-width: 375px) {
+        font-size: $title_size_mobile_app;
+
+    }
 }
 
 .banner__arrow--left {

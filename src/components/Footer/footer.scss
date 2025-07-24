@@ -18,5 +18,14 @@
     color: $white;
     margin-top: 1.625rem; // 26px
     margin-bottom: 0;
-    font-size: 1.5rem; // 24px
+    font-size: $footer_text_size; // 24px
+
+    @media (max-width: 375px) {
+        font-size: $footer_text_size_mobile_app;
+        width: 122px;
+        text-align: center;
+        padding: 0px 4px;
+        margin-top: 12px;
+
+    }
 }

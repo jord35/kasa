@@ -6,12 +6,13 @@ import "./logement-info.scss"
 
 function LogementInfo({ title, location, hostPicture, hostName, tags, rating }) {
     return (
-        <>
-            <div className="LogementInfo">
-                <div className="LogementInfo__hotel">
-                    <h1 className="LogementInfo__title">{title}</h1>
-                    <p className="LogementInfo__location">{location}</p>
-                </div>
+        <div className="LogementInfo">
+            <div className="LogementInfo__hotel">
+                <h1 className="LogementInfo__title">{title}</h1>
+                <p className="LogementInfo__location">{location}</p>
+                <TagListe tags={tags} />
+            </div>
+            <div className="LogementInfo__hostAndRating" >
                 <div className="LogementInfo__host">
                     <h2 className="LogementInfo__hostName">{hostName.split(' ').map((word, index) => (
                         <span key={index}>
@@ -24,14 +25,14 @@ function LogementInfo({ title, location, hostPicture, hostName, tags, rating }) 
                         src={hostPicture}
                         alt={hostName}
                     />
+
                 </div>
 
-            </div>
-            <div className="LogementInfo__feature" >
-                <TagListe tags={tags} />
                 <Rating rating={rating} />
             </div>
-        </>
+
+        </div>
+
     );
 }
 export default LogementInfo;

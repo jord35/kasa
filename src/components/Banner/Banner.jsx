@@ -23,7 +23,7 @@ function Banner({ img, title, isLocation }) {
                 <img
                     src={img[0]}
                     alt="banner"
-                    className="banner__picture"
+                    className="banner__picture "
                 />
                 <h1 className="banner__title">{title}</h1>
             </div>
@@ -52,7 +52,7 @@ function Banner({ img, title, isLocation }) {
             <img
                 src={img[0]}
                 alt="banner"
-                className="banner__picture"
+                className="banner__picture banner__picture--not__location"
             />
             <h1 className="banner__title">{title}</h1>
         </div>
