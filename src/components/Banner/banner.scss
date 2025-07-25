@@ -1,25 +1,25 @@
-@import '../../assets/scss/variables';
+@use '../../assets/scss/variables' as *;
 
 .banner {
     display: inline-block;
     position: relative;
     width: 100%;
-    height: 223px;
-    border-radius: 1.5625rem;
+    height: 13.9375rem; // 223px
+    border-radius: 1.5625rem; // 25px
     overflow: hidden;
 
     @media (max-width: 375px) {
-        height: 111px;
-
+        // 375px
+        height: 6.9375rem; // 111px
     }
 }
 
 .banner--location {
-    height: 25.9375rem;
-
+    height: 25.9375rem; // 415px
 
     @media (max-width: 375px) {
-        height: 255px;
+        // 375px
+        height: 15.9375rem; // 255px
     }
 }
 
@@ -28,12 +28,10 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-
 }
 
 .banner__picture--not__location {
     filter: brightness(60%);
-
 }
 
 .banner__title {
@@ -48,9 +46,10 @@
     margin: 0;
 
     @media (max-width: 375px) {
-        font-size: $title_size_mobile_app;
+        // 375px
+        font-size: $title_size_mobile_app; // 24px
         text-align: start;
-        left: 38%;
+        left: 7.375rem;
     }
 }
 
@@ -66,8 +65,8 @@
     cursor: pointer;
 
     @media (max-width: 375px) {
-        font-size: $title_size_mobile_app;
-
+        // 375px
+        font-size: $title_size_mobile_app; // 24px
     }
 }
 

@@ -1,4 +1,4 @@
-@import '../../assets/scss/variables';
+@use '../../assets/scss/variables' as *;
 
 .notfound {
     display: flex;
@@ -8,27 +8,27 @@
 }
 
 .notfound__title {
-    font-size: $not_found_title_size;
+    font-size: $not_found_title_size; // 288px
     color: $red;
-    margin: 6rem 0 8.688rem; // 96px 0px
-
+    margin: 6rem 0 8.688rem; // 96px 0 139px
 
     @media (max-width: 375px) {
-        font-size: $not_found_title_size_mobile_app;
-        margin: 113px;
-
+        // 375px
+        font-size: $not_found_title_size_mobile_app; // 96px
+        margin: 7.0625rem; // 113px
     }
 }
 
 .notfound__txt {
     margin: 0 0 8.688rem 0; // 0 0 139px 0
-    font-size: $subtitle_size;
+    font-size: $subtitle_size; // 36px
     color: $red;
+    text-align: center;
 
     @media (max-width: 375px) {
-        font-size: $subtitle_size_mobile_app;
-        margin-bottom: 113px;
-
+        // 375px
+        font-size: $subtitle_size_mobile_app; // 18px
+        margin-bottom: 7.0625rem; // 113px
     }
 }
 
@@ -38,8 +38,8 @@
     color: $dark;
 
     @media (max-width: 375px) {
-        font-size: $not_found_subtext_size_mobile_app;
-        margin-bottom: 113px;
-
+        // 375px
+        font-size: $not_found_subtext_size_mobile_app; // 14px
+        margin-bottom: 7.0625rem; // 113px
     }
 }

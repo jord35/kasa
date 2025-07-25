@@ -1,4 +1,4 @@
-@import '../../assets/scss/variables';
+@use '../../assets/scss/variables' as *;
 
 .footer {
     background: $dark;
@@ -7,6 +7,12 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    min-width: 43.75rem; // 700px
+
+    @media (max-width: 375px) {
+        // 375px
+        min-width: 11.5625rem; // 185px
+    }
 }
 
 .footer__logo {
@@ -21,11 +27,11 @@
     font-size: $footer_text_size; // 24px
 
     @media (max-width: 375px) {
-        font-size: $footer_text_size_mobile_app;
-        width: 122px;
+        // 375px
+        font-size: $footer_text_size_mobile_app; // 12px
+        width: 7.625rem; // 122px
         text-align: center;
-        padding: 0px 4px;
-        margin-top: 12px;
-
+        padding: 0 0.25rem; // 0px 4px
+        margin-top: 0.75rem; // 12px
     }
 }

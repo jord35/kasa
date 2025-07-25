@@ -1,16 +1,18 @@
-@import '../../assets/scss/variables';
+@use '../../assets/scss/variables' as *;
 
 .header {
     display: flex;
     align-items: center;
     flex-direction: column;
     width: 100%;
-    max-width: 1240px;
-    margin: 0 auto 30px;
-
+    max-width: 77.5rem; // 1240px
+    margin: 0 auto 1.875rem; // 30px
+    min-width: 43.75rem; // 700px
 
     @media (max-width: 375px) {
-        margin-bottom: 0px;
-        max-width: 335px;
+        // 375px
+        margin-bottom: 0;
+        max-width: 20.9375rem; // 335px
+        min-width: 11.5625rem // 185px
     }
 }

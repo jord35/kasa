@@ -1,15 +1,17 @@
+@use '../../assets/scss/variables' as *;
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 
-@import '../../assets/scss/variables';
+
 
 body {
-    max-width: 90rem;
-    margin: 2.8125rem auto 0 auto;
+    max-width: 90rem; // 1440px
+    margin: 2.8125rem auto 0 auto; // 45px auto 0 auto
     font-family: 'Montserrat', sans-serif;
 
     @media (max-width: 375px) {
-        margin: 20px 0px 0px;
-        min-width: 335px;
+        // 375px
+        margin: 1.25rem 0 0; // 20px 0 0
+        min-width: 20.9375rem; // 335px
     }
 }
 
@@ -23,28 +25,30 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 77.5rem;
+    max-width: 77.5rem; // 1240px
 
-    gap: 1.875rem;
-    margin-bottom: 2.375rem;
-    margin: 0px 208.5px 38px;
+    gap: 1.875rem; // 30px
+    margin-bottom: 2.375rem; // 38px
+    margin: 0 13.03125rem 2.375rem; // 0 208.5px 38px
 
     @media (max-width: 375px) {
-        gap: 20px;
-        max-width: 335px;
-        margin: 19.5px 19px;
-
-
+        // 375px
+        gap: 1.25rem; // 20px
+        max-width: 20.9375rem; // 335px
+        margin: 1.21875rem 1.1875rem; // 19.5px 19px
     }
 }
 
 section {
     width: 100%;
-    max-width: 1240px;
-    margin: 0 auto 3.125rem;
+    max-width: 77.5rem; // 1240px
+    margin: 0 auto 3.125rem; // 0 auto 50px
+    min-width: 43.75rem; // 700px
 
     @media (max-width: 375px) {
-        padding: 0 20px;
-        margin-bottom: 27px;
+        // 375px
+        padding: 0 1.25rem; // 0 20px
+        margin-bottom: 1.6875rem; // 27px
+        min-width: 11.5625rem // 185px
     }
 }

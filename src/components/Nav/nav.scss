@@ -1,4 +1,4 @@
-@import '../../assets/scss/variables';
+@use '../../assets/scss/variables' as *;
 
 .nav {
     display: flex;
@@ -9,7 +9,8 @@
     width: 100%;
 
     @media (max-width: 375px) {
-        margin-bottom: 27px;
+        // 375px
+        margin-bottom: 1.6875rem; // 27px
     }
 }
 
@@ -18,7 +19,8 @@
     height: 100%;
 
     @media (max-width: 375px) {
-        width: 145px;
+        // 375px
+        width: 9.0625rem; // 145px
     }
 }
 
@@ -28,7 +30,8 @@
     gap: 3.563rem; // 57px
 
     @media (max-width: 375px) {
-        gap: 26px;
+        // 375px
+        gap: 1.625rem; // 26px
     }
 }
 
@@ -42,6 +45,7 @@
     }
 
     @media (max-width: 375px) {
-        font-size: $text_size_mobile_app;
+        // 375px
+        font-size: $text_size_mobile_app; // 12px
     }
 }
