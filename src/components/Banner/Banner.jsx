@@ -42,6 +42,7 @@ function Banner({ img, title, isLocation }) {
                 <h1 className="banner__title">{title}</h1>
                 <button onClick={handlePrev} className="banner__arrow banner__arrow--left">{'⟨'}</button>
                 <button onClick={handleNext} className="banner__arrow banner__arrow--right">{'⟩'}</button>
+                <p className="banner__counter ">  {index + 1}/{img.length}</p>
             </div>
         );
     }

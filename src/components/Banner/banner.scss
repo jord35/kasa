@@ -53,6 +53,23 @@
     }
 }
 
+.banner__counter {
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: $white;
+    font-size: $subtext_size; // 18px
+    text-align: center;
+    margin: 0;
+    background-color: transparent;
+    cursor: pointer;
+
+    @media (max-width: 375px) {
+        opacity: 0;
+    }
+}
+
 .banner__arrow {
     position: absolute;
     top: 50%;
@@ -73,7 +90,6 @@
 .banner__arrow--left {
     left: 1.9375rem; // 31px
     padding: 0;
-    margin: 0;
     border: 0;
 }
 
